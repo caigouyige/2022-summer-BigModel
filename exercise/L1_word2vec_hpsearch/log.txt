@@ -1,0 +1,36 @@
+Model name: cbow, Train batch size = 50, Learning rate = 0.25, Val Loss = 5.00312
+
+Model name: cbow, Train batch size = 50, Learning rate = 0.50, Val Loss = 5.05018
+
+Model name: cbow, Train batch size = 50, Learning rate = 1.00, Val Loss = 5.44675
+
+Model name: cbow, Train batch size = 100, Learning rate = 0.25, Val Loss = 4.86131
+
+Model name: cbow, Train batch size = 100, Learning rate = 0.50, Val Loss = 4.96417
+
+Model name: cbow, Train batch size = 100, Learning rate = 1.00, Val Loss = 5.60582
+
+Model name: cbow, Train batch size = 150, Learning rate = 0.25, Val Loss = 4.80902
+
+Model name: cbow, Train batch size = 150, Learning rate = 0.50, Val Loss = 4.88675
+
+Model name: cbow, Train batch size = 150, Learning rate = 1.00, Val Loss = 5.66544
+
+Model name: skipgram, Train batch size = 50, Learning rate = 0.25, Val Loss = 5.47717
+
+Model name: skipgram, Train batch size = 50, Learning rate = 0.50, Val Loss = 5.53835
+
+Model name: skipgram, Train batch size = 50, Learning rate = 1.00, Val Loss = 5.70279
+
+Model name: skipgram, Train batch size = 100, Learning rate = 0.25, Val Loss = 5.43093
+
+Model name: skipgram, Train batch size = 100, Learning rate = 0.50, Val Loss = 5.47208
+
+Model name: skipgram, Train batch size = 100, Learning rate = 1.00, Val Loss = 5.58500
+
+Model name: skipgram, Train batch size = 150, Learning rate = 0.25, Val Loss = 5.40900
+
+Model name: skipgram, Train batch size = 150, Learning rate = 0.50, Val Loss = 5.43128
+
+Model name: skipgram, Train batch size = 150, Learning rate = 1.00, Val Loss = 5.50324
+
