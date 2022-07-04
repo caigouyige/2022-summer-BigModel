@@ -1,0 +1,236 @@
+###############################################
+result for two tests: batch_size = 32, 16
+###############################################
+
+***** Running training *****
+  Num examples = 104743
+  Num Epochs = 5
+  Instantaneous batch size per device = 32
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 1
+  Total optimization steps = 16370
+{'loss': 0.6865, 'learning_rate': 1.938912645082468e-05, 'epoch': 0.15}                                                        
+{'loss': 0.6658, 'learning_rate': 1.8778252901649362e-05, 'epoch': 0.31}                                                       
+{'loss': 0.6623, 'learning_rate': 1.816737935247404e-05, 'epoch': 0.46}                                                        
+{'loss': 0.659, 'learning_rate': 1.755650580329872e-05, 'epoch': 0.61}                                                         
+{'loss': 0.6572, 'learning_rate': 1.69456322541234e-05, 'epoch': 0.76}                                                         
+{'loss': 0.6558, 'learning_rate': 1.6334758704948076e-05, 'epoch': 0.92}                                                       
+ 20%|█████████████████                                                                    | 3274/16370 [01:07<04:32, 48.08it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, sentence, question. If idx, sentence, question are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 32
+{'eval_loss': 0.6485690474510193, 'eval_accuracy': 0.615046677649643, 'eval_runtime': 1.2562, 'eval_samples_per_second': 4348.829, 'eval_steps_per_second': 136.125, 'epoch': 1.0}                                                                            
+ 20%|█████████████████                                                                    | 3274/16370 [01:08<04:32, 48.08it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-3274                                                             
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-3274/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-3274/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-3274/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-3274/special_tokens_map.json
+{'loss': 0.6504, 'learning_rate': 1.5723885155772757e-05, 'epoch': 1.07}                                                       
+{'loss': 0.6546, 'learning_rate': 1.5113011606597437e-05, 'epoch': 1.22}                                                       
+{'loss': 0.6489, 'learning_rate': 1.4502138057422115e-05, 'epoch': 1.37}                                                       
+{'loss': 0.6486, 'learning_rate': 1.3891264508246794e-05, 'epoch': 1.53}                                                       
+{'loss': 0.6485, 'learning_rate': 1.3280390959071474e-05, 'epoch': 1.68}                                                       
+{'loss': 0.65, 'learning_rate': 1.2669517409896153e-05, 'epoch': 1.83}                                                         
+{'loss': 0.6465, 'learning_rate': 1.2058643860720831e-05, 'epoch': 1.99}                                                       
+ 40%|█████████████████████████████████▉                                                   | 6547/16370 [02:16<03:25, 47.75it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, sentence, question. If idx, sentence, question are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 32
+{'eval_loss': 0.645703136920929, 'eval_accuracy': 0.6168771737140765, 'eval_runtime': 1.2374, 'eval_samples_per_second': 4414.895, 'eval_steps_per_second': 138.193, 'epoch': 2.0}                                                                            
+ 40%|██████████████████████████████████                                                   | 6548/16370 [02:17<03:25, 47.75it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-6548                                                             
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-6548/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-6548/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-6548/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-6548/special_tokens_map.json
+{'loss': 0.6431, 'learning_rate': 1.1447770311545512e-05, 'epoch': 2.14}                                                       
+{'loss': 0.6423, 'learning_rate': 1.083689676237019e-05, 'epoch': 2.29}                                                        
+{'loss': 0.6495, 'learning_rate': 1.0226023213194869e-05, 'epoch': 2.44}                                                       
+{'loss': 0.6431, 'learning_rate': 9.615149664019549e-06, 'epoch': 2.6}                                                         
+{'loss': 0.6406, 'learning_rate': 9.004276114844227e-06, 'epoch': 2.75}                                                        
+{'loss': 0.6446, 'learning_rate': 8.393402565668908e-06, 'epoch': 2.9}                                                         
+ 60%|██████████████████████████████████████████████████▉                                  | 9821/16370 [03:24<02:15, 48.42it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, sentence, question. If idx, sentence, question are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 32
+{'eval_loss': 0.6459288597106934, 'eval_accuracy': 0.6218195130880468, 'eval_runtime': 1.2519, 'eval_samples_per_second': 4363.613, 'eval_steps_per_second': 136.588, 'epoch': 3.0}                                                                           
+ 60%|███████████████████████████████████████████████████                                  | 9822/16370 [03:25<02:15, 48.42it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-9822                                                             
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-9822/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-9822/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-9822/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-9822/special_tokens_map.json
+{'loss': 0.6387, 'learning_rate': 7.782529016493586e-06, 'epoch': 3.05}                                                        
+{'loss': 0.6353, 'learning_rate': 7.171655467318266e-06, 'epoch': 3.21}                                                        
+{'loss': 0.6428, 'learning_rate': 6.560781918142944e-06, 'epoch': 3.36}                                                        
+{'loss': 0.6373, 'learning_rate': 5.949908368967624e-06, 'epoch': 3.51}                                                        
+{'loss': 0.6378, 'learning_rate': 5.339034819792304e-06, 'epoch': 3.67}                                                        
+{'loss': 0.6393, 'learning_rate': 4.728161270616982e-06, 'epoch': 3.82}                                                        
+{'loss': 0.6347, 'learning_rate': 4.117287721441662e-06, 'epoch': 3.97}                                                        
+ 80%|███████████████████████████████████████████████████████████████████▏                | 13091/16370 [04:33<01:04, 50.49it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, sentence, question. If idx, sentence, question are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 32
+{'eval_loss': 0.646185040473938, 'eval_accuracy': 0.6210873146622735, 'eval_runtime': 1.2223, 'eval_samples_per_second': 4469.54, 'eval_steps_per_second': 139.903, 'epoch': 4.0}                                                                             
+ 80%|███████████████████████████████████████████████████████████████████▏                | 13096/16370 [04:35<01:04, 50.49it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-13096                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-13096/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-13096/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-13096/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-13096/special_tokens_map.json
+{'loss': 0.6339, 'learning_rate': 3.506414172266341e-06, 'epoch': 4.12}                                                        
+{'loss': 0.6316, 'learning_rate': 2.8955406230910206e-06, 'epoch': 4.28}                                                       
+{'loss': 0.6347, 'learning_rate': 2.2846670739156996e-06, 'epoch': 4.43}                                                       
+{'loss': 0.6362, 'learning_rate': 1.6737935247403788e-06, 'epoch': 4.58}                                                       
+{'loss': 0.638, 'learning_rate': 1.0629199755650582e-06, 'epoch': 4.73}                                                        
+{'loss': 0.6324, 'learning_rate': 4.5204642638973736e-07, 'epoch': 4.89}                                                       
+100%|███████████████████████████████████████████████████████████████████████████████████▉| 16367/16370 [05:42<00:00, 49.17it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, sentence, question. If idx, sentence, question are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 32
+{'eval_loss': 0.6464728713035583, 'eval_accuracy': 0.6203551162365001, 'eval_runtime': 1.2238, 'eval_samples_per_second': 4464.131, 'eval_steps_per_second': 139.734, 'epoch': 5.0}                                                                           
+100%|████████████████████████████████████████████████████████████████████████████████████| 16370/16370 [05:43<00:00, 49.17it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-16370                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-16370/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-16370/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-16370/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-16370/special_tokens_map.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+Loading best model from tiny-bert-finetuned-qnli/checkpoint-9822 (score: 0.6218195130880468).
+{'train_runtime': 344.0845, 'train_samples_per_second': 1522.053, 'train_steps_per_second': 47.576, 'train_loss': 0.6456272001738365, 'epoch': 5.0}
+100%|████████████████████████████████████████████████████████████████████████████████████| 16370/16370 [05:44<00:00, 47.58it/s]
+
+
+
+
+
+***** Running training *****
+  Num examples = 104743
+  Num Epochs = 5
+  Instantaneous batch size per device = 16
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 1
+  Total optimization steps = 32735
+{'loss': 0.6894, 'learning_rate': 1.9694516572475945e-05, 'epoch': 0.08}                                                       
+{'loss': 0.6719, 'learning_rate': 1.9389033144951888e-05, 'epoch': 0.15}                                                       
+{'loss': 0.6647, 'learning_rate': 1.908354971742783e-05, 'epoch': 0.23}                                                        
+{'loss': 0.6591, 'learning_rate': 1.8778066289903775e-05, 'epoch': 0.31}                                                       
+{'loss': 0.6604, 'learning_rate': 1.8472582862379718e-05, 'epoch': 0.38}                                                       
+{'loss': 0.6583, 'learning_rate': 1.816709943485566e-05, 'epoch': 0.46}                                                        
+{'loss': 0.6571, 'learning_rate': 1.7861616007331604e-05, 'epoch': 0.53}                                                       
+{'loss': 0.6574, 'learning_rate': 1.7556132579807548e-05, 'epoch': 0.61}                                                       
+{'loss': 0.6569, 'learning_rate': 1.725064915228349e-05, 'epoch': 0.69}                                                        
+{'loss': 0.6555, 'learning_rate': 1.6945165724759434e-05, 'epoch': 0.76}                                                       
+{'loss': 0.6578, 'learning_rate': 1.6639682297235374e-05, 'epoch': 0.84}                                                       
+{'loss': 0.6525, 'learning_rate': 1.633419886971132e-05, 'epoch': 0.92}                                                        
+{'loss': 0.6499, 'learning_rate': 1.6028715442187264e-05, 'epoch': 0.99}                                                       
+ 20%|████████████████▉                                                                    | 6546/32735 [02:01<06:32, 66.80it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, question, sentence. If idx, question, sentence are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 16
+{'eval_loss': 0.6472378373146057, 'eval_accuracy': 0.6181585209591799, 'eval_runtime': 1.7469, 'eval_samples_per_second': 3127.166, 'eval_steps_per_second': 195.77, 'epoch': 1.0}                                                                            
+ 20%|█████████████████                                                                    | 6547/32735 [02:03<06:32, 66.80it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-6547                                                             
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-6547/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-6547/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-6547/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-6547/special_tokens_map.json
+{'loss': 0.6467, 'learning_rate': 1.5723232014663207e-05, 'epoch': 1.07}                                                       
+{'loss': 0.6504, 'learning_rate': 1.541774858713915e-05, 'epoch': 1.15}                                                        
+{'loss': 0.6536, 'learning_rate': 1.5112265159615092e-05, 'epoch': 1.22}                                                       
+{'loss': 0.6445, 'learning_rate': 1.4806781732091035e-05, 'epoch': 1.3}                                                        
+{'loss': 0.6464, 'learning_rate': 1.4501298304566977e-05, 'epoch': 1.37}                                                       
+{'loss': 0.6443, 'learning_rate': 1.4195814877042922e-05, 'epoch': 1.45}                                                       
+{'loss': 0.6476, 'learning_rate': 1.3890331449518865e-05, 'epoch': 1.53}                                                       
+{'loss': 0.6436, 'learning_rate': 1.3584848021994808e-05, 'epoch': 1.6}                                                        
+{'loss': 0.6463, 'learning_rate': 1.3279364594470752e-05, 'epoch': 1.68}                                                       
+{'loss': 0.6489, 'learning_rate': 1.2973881166946693e-05, 'epoch': 1.76}                                                       
+{'loss': 0.648, 'learning_rate': 1.2668397739422638e-05, 'epoch': 1.83}                                                        
+{'loss': 0.6441, 'learning_rate': 1.236291431189858e-05, 'epoch': 1.91}                                                        
+{'loss': 0.6431, 'learning_rate': 1.2057430884374523e-05, 'epoch': 1.99}                                                       
+ 40%|█████████████████████████████████▌                                                  | 13093/32735 [04:00<04:53, 67.02it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, question, sentence. If idx, question, sentence are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 16
+{'eval_loss': 0.6445053219795227, 'eval_accuracy': 0.6216364634816035, 'eval_runtime': 1.7716, 'eval_samples_per_second': 3083.74, 'eval_steps_per_second': 193.051, 'epoch': 2.0}                                                                            
+ 40%|█████████████████████████████████▌                                                  | 13094/32735 [04:02<04:53, 67.02it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-13094                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-13094/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-13094/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-13094/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-13094/special_tokens_map.json
+{'loss': 0.6415, 'learning_rate': 1.1751947456850468e-05, 'epoch': 2.06}                                                       
+{'loss': 0.6377, 'learning_rate': 1.144646402932641e-05, 'epoch': 2.14}                                                        
+{'loss': 0.6365, 'learning_rate': 1.1140980601802354e-05, 'epoch': 2.21}                                                       
+{'loss': 0.6363, 'learning_rate': 1.0835497174278296e-05, 'epoch': 2.29}                                                       
+{'loss': 0.6446, 'learning_rate': 1.053001374675424e-05, 'epoch': 2.37}                                                        
+{'loss': 0.6432, 'learning_rate': 1.0224530319230184e-05, 'epoch': 2.44}                                                       
+{'loss': 0.637, 'learning_rate': 9.919046891706126e-06, 'epoch': 2.52}                                                         
+{'loss': 0.6392, 'learning_rate': 9.613563464182069e-06, 'epoch': 2.6}                                                         
+{'loss': 0.6348, 'learning_rate': 9.308080036658012e-06, 'epoch': 2.67}                                                        
+{'loss': 0.6374, 'learning_rate': 9.002596609133956e-06, 'epoch': 2.75}                                                        
+{'loss': 0.6369, 'learning_rate': 8.697113181609899e-06, 'epoch': 2.83}                                                        
+{'loss': 0.6404, 'learning_rate': 8.391629754085842e-06, 'epoch': 2.9}                                                         
+{'loss': 0.6347, 'learning_rate': 8.086146326561785e-06, 'epoch': 2.98}                                                        
+ 60%|██████████████████████████████████████████████████▍                                 | 19638/32735 [06:04<04:07, 52.96it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, question, sentence. If idx, question, sentence are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 16
+{'eval_loss': 0.646481990814209, 'eval_accuracy': 0.6210873146622735, 'eval_runtime': 1.7401, 'eval_samples_per_second': 3139.562, 'eval_steps_per_second': 196.546, 'epoch': 3.0}                                                                            
+ 60%|██████████████████████████████████████████████████▍                                 | 19641/32735 [06:06<04:07, 52.96it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-19641                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-19641/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-19641/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-19641/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-19641/special_tokens_map.json
+{'loss': 0.6291, 'learning_rate': 7.780662899037727e-06, 'epoch': 3.05}                                                        
+{'loss': 0.6243, 'learning_rate': 7.47517947151367e-06, 'epoch': 3.13}                                                         
+{'loss': 0.6329, 'learning_rate': 7.169696043989614e-06, 'epoch': 3.21}                                                        
+{'loss': 0.6351, 'learning_rate': 6.8642126164655576e-06, 'epoch': 3.28}                                                       
+{'loss': 0.6342, 'learning_rate': 6.558729188941501e-06, 'epoch': 3.36}                                                        
+{'loss': 0.6269, 'learning_rate': 6.253245761417443e-06, 'epoch': 3.44}                                                        
+{'loss': 0.6314, 'learning_rate': 5.9477623338933865e-06, 'epoch': 3.51}                                                       
+{'loss': 0.6295, 'learning_rate': 5.64227890636933e-06, 'epoch': 3.59}                                                         
+{'loss': 0.6313, 'learning_rate': 5.336795478845274e-06, 'epoch': 3.67}                                                        
+{'loss': 0.6289, 'learning_rate': 5.031312051321216e-06, 'epoch': 3.74}                                                        
+{'loss': 0.6369, 'learning_rate': 4.7258286237971595e-06, 'epoch': 3.82}                                                       
+{'loss': 0.6186, 'learning_rate': 4.420345196273103e-06, 'epoch': 3.89}                                                        
+{'loss': 0.6397, 'learning_rate': 4.114861768749045e-06, 'epoch': 3.97}                                                        
+ 80%|███████████████████████████████████████████████████████████████████▏                | 26186/32735 [08:09<02:09, 50.60it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, question, sentence. If idx, question, sentence are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 16
+{'eval_loss': 0.6481917500495911, 'eval_accuracy': 0.6205381658429434, 'eval_runtime': 1.7413, 'eval_samples_per_second': 3137.385, 'eval_steps_per_second': 196.41, 'epoch': 4.0}                                                                            
+ 80%|███████████████████████████████████████████████████████████████████▏                | 26188/32735 [08:11<02:09, 50.60it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-26188                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-26188/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-26188/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-26188/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-26188/special_tokens_map.json
+{'loss': 0.6264, 'learning_rate': 3.809378341224989e-06, 'epoch': 4.05}                                                        
+{'loss': 0.6184, 'learning_rate': 3.503894913700932e-06, 'epoch': 4.12}                                                        
+{'loss': 0.6206, 'learning_rate': 3.198411486176875e-06, 'epoch': 4.2}                                                         
+{'loss': 0.6243, 'learning_rate': 2.8929280586528187e-06, 'epoch': 4.28}                                                       
+{'loss': 0.6265, 'learning_rate': 2.5874446311287615e-06, 'epoch': 4.35}                                                       
+{'loss': 0.6233, 'learning_rate': 2.2819612036047043e-06, 'epoch': 4.43}                                                       
+{'loss': 0.6243, 'learning_rate': 1.9764777760806476e-06, 'epoch': 4.51}                                                       
+{'loss': 0.6264, 'learning_rate': 1.670994348556591e-06, 'epoch': 4.58}                                                        
+{'loss': 0.6322, 'learning_rate': 1.3655109210325341e-06, 'epoch': 4.66}                                                       
+{'loss': 0.629, 'learning_rate': 1.0600274935084774e-06, 'epoch': 4.73}                                                        
+{'loss': 0.6206, 'learning_rate': 7.545440659844204e-07, 'epoch': 4.81}                                                        
+{'loss': 0.6232, 'learning_rate': 4.490606384603636e-07, 'epoch': 4.89}                                                        
+{'loss': 0.6237, 'learning_rate': 1.4357721093630674e-07, 'epoch': 4.96}                                                       
+100%|███████████████████████████████████████████████████████████████████████████████████▉| 32732/32735 [10:17<00:00, 53.93it/s]The following columns in the evaluation set don't have a corresponding argument in `BertForSequenceClassification.forward` and have been ignored: idx, question, sentence. If idx, question, sentence are not expected by `BertForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 5463
+  Batch size = 16
+{'eval_loss': 0.6503323316574097, 'eval_accuracy': 0.615595826468973, 'eval_runtime': 1.7383, 'eval_samples_per_second': 3142.779, 'eval_steps_per_second': 196.747, 'epoch': 5.0}                                                                            
+100%|████████████████████████████████████████████████████████████████████████████████████| 32735/32735 [10:18<00:00, 53.93it/sSaving model checkpoint to tiny-bert-finetuned-qnli/checkpoint-32735                                                            
+Configuration saved in tiny-bert-finetuned-qnli/checkpoint-32735/config.json
+Model weights saved in tiny-bert-finetuned-qnli/checkpoint-32735/pytorch_model.bin
+tokenizer config file saved in tiny-bert-finetuned-qnli/checkpoint-32735/tokenizer_config.json
+Special tokens file saved in tiny-bert-finetuned-qnli/checkpoint-32735/special_tokens_map.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+Loading best model from tiny-bert-finetuned-qnli/checkpoint-13094 (score: 0.6216364634816035).
+{'train_runtime': 619.0168, 'train_samples_per_second': 846.043, 'train_steps_per_second': 52.882, 'train_loss': 0.6401294871980368, 'epoch': 5.0}
+100%|████████████████████████████████████████████████████████████████████████████████████| 32735/32735 [10:19<00:00, 52.88it/s]
