@@ -1,0 +1,2 @@
+openprompt==1.0.1
+opendelta==0.2.3
