@@ -9,7 +9,7 @@ metric = load_metric('glue', 'qnli')
 from transformers import AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained('google/bert_uncased_L-2_H-128_A-2')
 def preprocess_function(examples):
-    return tokenizer(examples['sentence'], truncation=True, padding=True, max_length=50, add_special_tokens = True)
+    return tokenizer(examples['sentence'], truncation=True, padding=True, max_length=512, add_special_tokens = True)
 encoded_dataset = dataset.map(preprocess_function, batched=True)
 
 # Fine-tune
